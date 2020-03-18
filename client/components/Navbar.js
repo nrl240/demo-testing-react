@@ -1,14 +1,12 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
-const Navbar = props => {
-  const { selectCritters } = props;
+const Navbar = (props) => {
+
   return (
-    <div id="nav">
-      <button id="dogs" onClick={() => selectCritters('dogs')}>Dogs</button>
-      <button id="cats" onClick={() => selectCritters('cats')}>Cats</button>
-      <button id="dragons" onClick={() => selectCritters('dragons')}>Dragons</button>
+    <div>
     </div>
-  );
+  )
 };
 
 export default Navbar;

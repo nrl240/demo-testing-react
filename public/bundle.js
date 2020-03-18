@@ -19026,28 +19026,9 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const Navbar = props => {
-  const { selectCritters } = props;
-  return _react2.default.createElement(
-    "div",
-    { id: "nav" },
-    _react2.default.createElement(
-      "button",
-      { id: "dogs", onClick: () => selectCritters('dogs') },
-      "Dogs"
-    ),
-    _react2.default.createElement(
-      "button",
-      { id: "cats", onClick: () => selectCritters('cats') },
-      "Cats"
-    ),
-    _react2.default.createElement(
-      "button",
-      { id: "dragons", onClick: () => selectCritters('dragons') },
-      "Dragons"
-    )
-  );
-};
 
+  return _react2.default.createElement('div', null);
+}; /* eslint-disable react/prop-types */
 exports.default = Navbar;
 
 /***/ }),
@@ -19068,27 +19049,8 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const Critters = props => {
-  return _react2.default.createElement(
-    "div",
-    { id: "critters" },
-    _react2.default.createElement(
-      "h1",
-      null,
-      props.title
-    ),
-    props.critters.map(critter => {
-      return _react2.default.createElement(
-        "div",
-        { key: critter.name },
-        _react2.default.createElement(
-          "h2",
-          null,
-          critter.name
-        ),
-        _react2.default.createElement("img", { src: critter.image })
-      );
-    })
-  );
+
+  return _react2.default.createElement('div', null);
 };
 
 exports.default = Critters;
