@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Critters = (props) => {
+const Critters = () => {
 
   return (
     <div>

@@ -19025,7 +19025,7 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const Navbar = props => {
+const Navbar = () => {
 
   return _react2.default.createElement('div', null);
 }; /* eslint-disable react/prop-types */
@@ -19048,7 +19048,7 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const Critters = props => {
+const Critters = () => {
 
   return _react2.default.createElement('div', null);
 };

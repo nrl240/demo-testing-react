@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-const Navbar = (props) => {
+const Navbar = () => {
 
   return (
     <div>
