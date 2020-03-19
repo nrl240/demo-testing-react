@@ -34,21 +34,21 @@ describe('<Critters>', function() {
     <Critters critters={critters} title='Bunnies!' />
   )
 
-  xit('has an <h1> that renders props.title', function() {
+  it('has an <h1> that renders props.title', function() {
     expect(crittersWrapper.find('h1').text()).to.be.equal('Bunnies!')
   })
 
-  xit('has the same number of <h2> as number of critters', function() {
+  it('has the same number of <h2> as number of critters', function() {
     expect(crittersWrapper.find('h2')).to.have.lengthOf(critters.length)
   })
 
-  xit('has the same number of <img> as number of critters', function() {
+  it('has the same number of <img> as number of critters', function() {
     expect(crittersWrapper.find('img')).to.have.lengthOf(critters.length)
   })
 })
 
 describe('<Navbar>', function() {
-  xit('renders the same number of button components as number of critter categories', function() {
+  it('renders the same number of button components as number of critter categories', function() {
     let selectCrittersSpy = sinon.spy()
     let navbarWrapper = shallow(
       <Navbar selectCritters={selectCrittersSpy} critterCategories={critterCategories} />
@@ -56,7 +56,7 @@ describe('<Navbar>', function() {
     expect(navbarWrapper.find('button')).to.have.lengthOf(critterCategories.length)
   })
 
-  xit('called selectCritters on click', function() {
+  it('called selectCritters on click', function() {
     let selectCrittersSpy = sinon.spy()
     let navbarWrapper = shallow(
       <Navbar selectCritters={selectCrittersSpy} critterCategories={critterCategories} />
@@ -67,7 +67,7 @@ describe('<Navbar>', function() {
     expect(selectCrittersSpy).to.have.been.calledOnce
   })
 
-  xit('calls selectCritters with the right button param', function() {
+  it('calls selectCritters with the right button param', function() {
     let selectCrittersSpy = sinon.spy()
     let navbarWrapper = shallow(
       <Navbar selectCritters={selectCrittersSpy} critterCategories={critterCategories} />
